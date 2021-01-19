@@ -114,10 +114,10 @@ func getSSHCmdline(name string, c *conf) []string {
 
 var opts struct {
 	ConfigFile  string `short:"c" long:"config-file"  description:"Config file path"           default:"~/.mssh"`
-	Dryrun      bool   `short:"n" long:"dry-run"      description:"Show target hosts and exit" default:"false"`
-	FixedString bool   `short:"f" long:"fixed-string" description:"Fixed string"               default:"false"`
-	Yes         bool   `short:"y" long:"yes"          description:"Say yes"                    default:"false"`
-	UseTMUX     bool   `short:"t" long:"tmux"         description:"Use tmux"                   default:"false"`
+	Dryrun      bool   `short:"n" long:"dry-run"      description:"Show target hosts and exit"`
+	FixedString bool   `short:"f" long:"fixed-string" description:"Fixed string"`
+	Yes         bool   `short:"y" long:"yes"          description:"Say yes"`
+	UseTMUX     bool   `short:"t" long:"tmux"         description:"Use tmux"`
 	Positional  struct {
 		Self    string
 		Filters []string
