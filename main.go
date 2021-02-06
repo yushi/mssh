@@ -11,8 +11,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/Sirupsen/logrus"
 	"github.com/jessevdk/go-flags"
+	"github.com/sirupsen/logrus"
 
 	"gopkg.in/yaml.v2"
 )
